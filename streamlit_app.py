@@ -31,7 +31,9 @@ def ui():
     approv_in_adv = st.text_input('Insira o approv_in_adv:')
     income = st.text_input('Insira o income:')
 
-    body = {
+    
+    if st.button('Executar'):
+        body = {
         'occupancy_type': f"{occupancy_type}",
         'co_applicant_credit_type': f"{co_applicant_credit_type}",
         'Credit_Score': float(credit_Score),
@@ -44,7 +46,6 @@ def ui():
         'income': float(income)
     }
 
-    if st.button('Executar'):
         retorno = dados_inadimplencia(body)
         if retorno is not None:
             st.write(retorno)
