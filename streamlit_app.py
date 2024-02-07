@@ -37,7 +37,7 @@ def ui():
         'occupancy_type': f"{occupancy_type}",
         'co_applicant_credit_type': f"{co_applicant_credit_type}",
         'Credit_Score': float(credit_Score),
-        'lvt': float(lvt),
+        'LTV': float(lvt),
         'loan_purpose': f"{loan_purpose}",
         'dtir1': float(dtir1),
         'property_value': float(property_value),
