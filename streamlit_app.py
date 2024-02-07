@@ -20,10 +20,7 @@ def ui():
     Page_cliente = st.sidebar.selectbox(
     'Menu', ['Inicio','Clusterização', 'Inadimplência'], 0)
 
-    icon("🏦")
     st.markdown('<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">', unsafe_allow_html=True)
-
-    st.title('FINTECH QUANTUMFINANCE')
 
     if Page_cliente == 'Clusterização':
         page_clust.customer_clustering()
