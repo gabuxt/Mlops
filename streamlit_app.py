@@ -31,16 +31,16 @@ def ui():
     income = st.text_input('Insira o income:')
 
     body = {
-        'occupancy_type': occupancy_type,
-        'co_applicant_credit_type': co_applicant_credit_type,
-        'Credit_Score': credit_Score,
-        'lvt': lvt,
-        'loan_purpose': loan_purpose,
-        'dtir1': dtir1,
-        'property_value': property_value,
-        'submission_of_application': submission_of_application,
-        'approv_in_adv': approv_in_adv,
-        'income': income
+        'occupancy_type': f"{occupancy_type}",
+        'co_applicant_credit_type': f"{co_applicant_credit_type}",
+        'Credit_Score': float(credit_Score),
+        'lvt': float(lvt),
+        'loan_purpose': f"{loan_purpose}",
+        'dtir1': float(dtir1),
+        'property_value': float(property_value),
+        'submission_of_application': f"{submission_of_application}",
+        'approv_in_adv': f"{approv_in_adv}",
+        'income': float(income)
     }
     
     if st.button('Executar'):
