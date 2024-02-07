@@ -13,7 +13,7 @@ def dados_inadimplencia(body):
         resposta.raise_for_status()  # Lança uma exceção para erros HTTP
         return resposta.json()
     except requests.exceptions.RequestException as e:
-        st.error(f"Erro na requisição: {e}")
+        st.error(f"Erro na requisição: {e}, {json.dumps(body)}")
         return None
 
 def ui():
