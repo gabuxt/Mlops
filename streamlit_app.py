@@ -16,6 +16,13 @@ def dados_inadimplencia(body):
         st.error(f"Erro na requisição: {e}, {json.dumps(body)}")
         return None
 
+def icon(emoji: str):
+    """Shows an emoji as a Notion-style page icon."""
+    st.write(
+        f'<span style="font-size: 78px; line-height: 1">{emoji}</span>',
+        unsafe_allow_html=True,
+    )
+
 def ui():
     st.set_page_config("Streamlit Components Hub", "💰", layout="wide")
     icon("🎪")
