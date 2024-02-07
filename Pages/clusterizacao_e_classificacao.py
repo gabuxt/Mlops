@@ -34,6 +34,12 @@ def customer_clustering():
     Region = st.text_input('Insira o Region:')
     year = st.text_input('Insira o year:')
     loan_amount = st.text_input('Insira o loan_amount:')
+    term = st.text_input('Insira o term:')
+    property_value = st.text_input('Insira o property_value:')
+    income = st.text_input('Insira o income:')
+    Credit_Score = st.text_input('Insira o Credit_Score:')
+    LTV = st.text_input('Insira o LTV:')
+    dtir1 = st.text_input('Insira o dtir1:')
 
     
     if st.button('Executar'):
@@ -44,6 +50,12 @@ def customer_clustering():
         'Region': f"{Region}",
         'year': int(year),
         'loan_amount': int(loan_amount),
+        'term': float(term),
+        'property_value': float(property_value),
+        'income': float(income),
+        'Credit_Score': int(Credit_Score),
+        'LTV': float(LTV),
+        'dtir1': float(dtir1)
     }
 
         retorno = dados_clusteringa(body)
