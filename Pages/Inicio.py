@@ -28,6 +28,6 @@ def inicio():
     st.write('3. Acessibilidade Universal: Queremos democratizar o acesso a serviços financeiros de qualidade. Nossas soluções são projetadas para serem acessíveis a todos, independentemente de seu histórico financeiro.')
     st.write('4. Compromisso com o Cliente: Você não é apenas um número para nós. Estamos comprometidos em construir relacionamentos sólidos com nossos clientes, oferecendo suporte personalizado em cada passo do caminho.\n\n')
     st.title('Nossos Serviços:\n')
-    st.write('Previsão de Inadimplência: Utilizando algoritmos avançados, oferecemos previsões precisas para ajudá-lo a gerenciar riscos e tomar decisões informadas.')
-    st.write('Avaliação de Crédito Simplificada: Simplificamos o processo de avaliação de crédito, tornando-o mais rápido e eficiente, permitindo que você alcance seus objetivos financeiros.')
+    st.write('- Previsão de Inadimplência: Utilizando algoritmos avançados, oferecemos previsões precisas para ajudá-lo a gerenciar riscos e tomar decisões informadas.')
+    st.write('- Avaliação de Crédito Simplificada: Simplificamos o processo de avaliação de crédito, tornando-o mais rápido e eficiente, permitindo que você alcance seus objetivos financeiros.')
     
