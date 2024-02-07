@@ -9,9 +9,9 @@ BASE_URL = "http://172.214.88.215"
 def dados_inadimplencia(body):
     body_json = json.dumps(body)
     url = f'{BASE_URL}/predict?model=default_propensity'
-    requests.post(url, data=body_json)
-    if response.status_code == 200:
-        return response.json()
+    resposta = requests.post(url, data=body_json)
+    if resposta.status_code == 200:
+        return resposta.json()
     else:
         return None
     
