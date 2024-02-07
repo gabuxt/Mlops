@@ -1,13 +1,15 @@
 from urllib import response
 import requests
 import streamlit as st
+import json
 
 
 BASE_URL = "http://172.214.88.215"
 
-def dados_inadimplencia():
+def dados_inadimplencia(body):
+    body_json = json.dumps(body)
     url = f'{BASE_URL}/predict?model=default_propensity'
-    response = requests.post(url)
+    requests.post(url, data=body_json)
     if response.status_code == 200:
         return response.json()
     else:
