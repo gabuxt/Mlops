@@ -27,7 +27,7 @@ def customer_clustering():
     icon("🏦")
     st.markdown('<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">', unsafe_allow_html=True)
 
-    st.title('Propensão de Inadimplência')
+    st.title('Avaliação de Crédito')
     loan_purpose = st.text_input('Insira o loan_purpose:')
     Security_Type = st.text_input('Insira o Security_Type:')
     age = st.text_input('Insira o age:')
