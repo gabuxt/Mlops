@@ -52,7 +52,7 @@ def propensao_de_inadimplencia():
         'submission_of_application': f"{submission_of_application}",
         'approv_in_adv': f"{approv_in_adv}",
         'income': float(income)
-    }
+        }
 
         retorno = dados_inadimplencia(body)
         if retorno is not None:
