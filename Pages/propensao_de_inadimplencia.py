@@ -56,4 +56,8 @@ def propensao_de_inadimplencia():
 
         retorno = dados_inadimplencia(body)
         if retorno is not None:
+            if retorno['prediction'] == 0:
                 st.write('Sem propensão a inadimplência')
+            else:
+                st.write('Com propensão a inadimplência')
+                
